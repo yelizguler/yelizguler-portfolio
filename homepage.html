@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang='en' class=''>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset='UTF-8'>
+    <title>Yeliz Guler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Yeliz Guler">
+    <meta property="og:description"
+        content="Over the last 13+ years, I have been crafting digital experiences that delight users, all while keeping business and marketing objectives in mind. With 8+ years in a leadership capacity, my passion lies at the intersection of UI/UX design, marketing, technology and team development.">
+    <meta name="author" content="Yeliz Guler | Front End Developer">
+    <link rel="apple-touch-icon" sizes="180x180" href="IMG_0357_rounded.png">
+    <link rel="shortcut icon" type="image/x-icon" href="IMG_0357_rounded.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="IMG_0357_rounded.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="IMG_0357_rounded.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#3E4B58">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+        integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"
+        integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q=="
+        crossorigin="anonymous"></script>
+
+    <script id="rendered-js">
+        // wait until DOM is ready
+        document.addEventListener("DOMContentLoaded", function (event) {
+
+            window.onload = function () {
+
+                window.requestAnimationFrame(function () {
+                    const boxes = gsap.utils.toArray("h1");
+
+                    boxes.forEach((box, i) => {
+                        const anim = gsap.fromTo(
+                            box,
+                            { autoAlpha: 0, y: 50 },
+                            { duration: 1, autoAlpha: 1, y: 0 }
+                        );
+                        ScrollTrigger.create({
+                            trigger: box,
+                            animation: anim,
+                            toggleActions: "play none none reverse",
+                            once: false
+                        });
+                    });
+
+                    const carousel = gsap.utils.toArray(".content-text");
+
+                    carousel.forEach((box, i) => {
+                        const anim = gsap.fromTo(
+                            box,
+                            { autoAlpha: 0, y: 50 },
+                            { duration: 1, autoAlpha: 1, y: 0 }
+                        );
+                        ScrollTrigger.create({
+                            trigger: box,
+                            animation: anim,
+                            toggleActions: "play none none reverse",
+                            once: false
+                        });
+                    });
+
+                    const animates = gsap.utils.toArray(".animate");
+
+                    animates.forEach((box, i) => {
+                        const anim = gsap.fromTo(
+                            box,
+                            { autoAlpha: 0, y: 50 },
+                            { duration: 1, autoAlpha: 1, y: 0 }
+                        );
+                        ScrollTrigger.create({
+                            trigger: box,
+                            animation: anim,
+                            toggleActions: "play none none reverse",
+                            once: false
+                        });
+                    });
+
+                    var targets = document.querySelectorAll(".quadrant .panel-text");
+
+                    targets.forEach((target) => {
+                        var bgnumber = $(target).find(".bg-number");
+                        const tl = gsap
+                            .timeline({
+                                scrollTrigger: {
+                                    trigger: target,
+                                    scrub: 0.2,
+                                    start: "center 50%",
+                                    end: "bottom 0",
+                                    pin: true
+                                }
+                            })
+                            .from(bgnumber, {
+                                opacity: 0.1,
+                                x: "70%",
+                                scrollTrigger: {
+                                    trigger: bgnumber,
+                                    id: "project-pin-1",
+                                    start: "top 80%",
+                                    end: "bottom -50%",
+                                    scrub: 1.5,
+                                    //   markers: true,
+                                    toggleActions: "play none none reverse",
+                                }
+                            })
+
+                            .from(target, { opacity: 0, duration: 100 })
+                            .to(target, { opacity: 0, duration: 100 });
+                    });
+
+                    gsap
+                        .timeline({
+                            scrollTrigger: {
+                                trigger: "#leadership-section-1",
+                                start: "top 90%",
+                                end: "bottom top",
+                                toggleActions: "play none none reverse",
+                                scrub: false
+                                //	markers:true
+                            }
+                        })
+                        .from(
+                            ".yeliz-quote .large-1",
+                            { yPercent: -10, opacity: 0, duration: 1 },
+                            "0"
+                        )
+                        .from(
+                            ".yeliz-quote .large-2",
+                            { yPercent: -10, opacity: 0, duration: 1, pause: 1 },
+                            ">.4"
+                        )
+                        .from(
+                            ".yeliz-quote .small",
+                            { yPercent: -10, opacity: 0, duration: 1, pause: 1 },
+                            ">.3"
+                        )
+                        .from(
+                            ".yeliz-quote .signature",
+                            { yPercent: -10, opacity: 0, duration: 1, pause: 1 },
+                            ">.2"
+                        );
+
+                    gsap
+                        .timeline({
+                            scrollTrigger: {
+                                trigger: ".animate-clifton",
+                                start: "top 60%",
+                                end: "bottom top",
+                                toggleActions: "play none none reverse",
+                                scrub: false
+                            }
+                        })
+                        .from(".item", {
+                            opacity: 0,
+                            yPercent: (i) => (i % 2 === 0 ? 0 : gsap.utils.random([100, -100])),
+                            xPercent: (i) => (i % 2 === 0 ? gsap.utils.random([100, -100]) : 0),
+                            stagger: 0.3
+                        });
+
+                    gsap
+                        .timeline({
+                            scrollTrigger: {
+                                trigger: ".animate-experience",
+                                start: "bottom bottom",
+                                end: "center center",
+                                scrub: false,
+                                toggleActions: "play none none reverse",
+                                ease: "power2"
+                            }
+                        })
+                        .fromTo(
+                            ".carousel.experience",
+                            { xPercent: 100 },
+                            {
+                                xPercent: 0,
+                                duration: 2
+                            },
+                            0
+                        );
+
+                    var els = $(".tabbed label");
+
+                    gsap.timeline({
+                        scrollTrigger: {
+                            trigger: ".animate-skills",
+                            start: "top 70%",
+                            end: "bottom top",
+                            toggleActions: "play none none reverse",
+                            onEnter: myEnterFunc
+                        }
+                    });
+
+                    function myEnterFunc() {
+                        document.querySelector("#firsttab").click();
+                    }
+
+                    const tl = gsap.timeline(),
+                        atom = document.querySelector(".atom"),
+                        nucleus = document.querySelector(".nucleus"),
+                        dur = 4,
+                        del = 0.5;
+
+                    const e = tl.fromTo(
+                        ".electron",
+                        { rotationX: -90 },
+                        {
+                            rotationZ: 0,
+                            rotationX: -90,
+                            ease: "none",
+                            duration: dur,
+                            stagger: {
+                                each: -del,
+                                repeat: -1
+                            }
+                        },
+                        0
+                    );
+                    const p = tl.to(
+                        ".path",
+                        {
+                            rotationZ: 360,
+                            ease: "none",
+                            duration: dur,
+                            stagger: {
+                                each: -del,
+                                repeat: -1
+                            }
+                        },
+                        0
+                    );
+
+                    // Add a rotation to the whole atom
+                    gsap.set(atom, { transformOrigin: "center center" });
+                    gsap.to(atom, { rotation: 360, ease: "none", repeat: -1, duration: 80 });
+
+                    // Skip the loading
+                    tl.progress(0.9999);
+
+                    const timeScaleTween = gsap.to(tl, {
+                        duration: 0.75,
+                        timeScale: 0.1,
+                        paused: true
+                    });
+
+                    gsap
+                        .timeline({
+                            scrollTrigger: {
+                                trigger: ".base",
+                                start: "bottom bottom",
+                                end: "center center",
+                                scrub: 0.3
+                            }
+                        })
+                        .add("start")
+                        .fromTo(
+                            ".top",
+                            { yPercent: 0, rotation: 0 },
+                            { rotation: 15, yPercent: -96, duration: 1, repeat: 0, ease: "linear" },
+                            "start"
+                        )
+                        .fromTo(
+                            ".test",
+                            { yPercent: 0, scale: 0.5 },
+                            { scale: 1, yPercent: -72, duration: 1, repeat: 0, ease: "linear" },
+                            "start"
+                        )
+                        .fromTo(
+                            ".intp",
+                            { yPercent: 0, scale: 0.5 },
+                            { scale: 1, yPercent: -12, duration: 1, repeat: 0, ease: "linear" },
+                            "start"
+                        );
+
+                    var parallaxImage = document.getElementById("ParallaxImage");
+                    var parallaxContent = document.getElementById("ParallaxContent");
+                    var windowScrolled;
+
+                    window.addEventListener("scroll", function windowScroll() {
+                        windowScrolled = window.pageYOffset || document.documentElement.scrollTop;
+
+                        parallaxImage.style.transform =
+                            "translate3d(0, " + windowScrolled / 4 + "px, 0)";
+
+                        parallaxContent.style.transform =
+                            "translate3d(0, " + windowScrolled / 2 + "px, 0)";
+                    });
+
+                    class StickyNavigation {
+                        constructor() {
+                            this.currentId = null;
+                            this.currentTab = null;
+                            this.tabContainerHeight = 70;
+                            let self = this;
+                            $(".et-hero-tab").click(function () {
+                                self.onTabClick(event, $(this));
+                            });
+                            $(".scroll-down").click(function () {
+                                self.onTabClick(event, $(this));
+                            });
+                            $(window).scroll(() => {
+                                this.onScroll();
+                            });
+                            $(window).resize(() => {
+                                this.onResize();
+                            });
+                        }
+
+                        onTabClick(event, element) {
+                            event.preventDefault();
+                            let scrollTop = $(element.attr("href")).offset().top - 69;
+                            $("html, body").animate({ scrollTop: scrollTop }, 600);
+                        }
+
+                        onScroll() {
+                            this.checkTabContainerPosition();
+                            this.findCurrentTabSelector();
+                        }
+
+                        onResize() {
+                            if (this.currentId) {
+                                this.setSliderCss();
+                            }
+                        }
+
+                        checkTabContainerPosition() {
+                            let offset = $(".et-hero-tabs").offset().top + $(".et-hero-tabs").height();
+                            if ($(window).scrollTop() > offset) {
+                                $(".et-hero-tabs-container").addClass("et-hero-tabs-container--top");
+                            } else {
+                                $(".et-hero-tabs-container").removeClass("et-hero-tabs-container--top");
+                            }
+                        }
+
+                        findCurrentTabSelector(element) {
+                            let newCurrentId;
+                            let newCurrentTab;
+                            let self = this;
+                            $(".et-hero-tab").each(function () {
+                                let id = $(this).attr("href");
+                                let offsetTop = $(id).offset().top - self.tabContainerHeight;
+                                let offsetBottom =
+                                    $(id).offset().top + $(id).height() - self.tabContainerHeight;
+                                if (
+                                    $(window).scrollTop() > offsetTop &&
+                                    $(window).scrollTop() < offsetBottom
+                                ) {
+                                    newCurrentId = id;
+                                    newCurrentTab = $(this);
+                                }
+                            });
+                            if (this.currentId != newCurrentId || this.currentId === null) {
+                                this.currentId = newCurrentId;
+                                this.currentTab = newCurrentTab;
+                                this.setSliderCss();
+                            }
+                        }
+
+                        setSliderCss() {
+                            let width = 0;
+                            let left = 0;
+                            if (this.currentTab) {
+                                width = this.currentTab.css("width");
+                                left = this.currentTab.offset().left;
+                            }
+                            $(".et-hero-tab-slider").css("width", width);
+                            $(".et-hero-tab-slider").css("left", left);
+                        }
+                    }
+
+                    new StickyNavigation();
+
+
+
+                });
+
+            };
+
+        });
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZHEFX4ZD5Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZHEFX4ZD5Z');
+    </script>
+</head>
+
+<body translate="no">
+    <script>var str = window.location.pathname; var path = str.toLowerCase(); if (path.length > 1 && path.length < 30) { document.body.classList.add(path.replace('/', '')); document.body.classList.add("branded"); } else {
+            document.body.classList.add("branded");
+        }</script>
+
+    <!-- START OF SECTION 1 (HOME SCREEN) -->
+    <section class="et-hero-tabs hero" id="tab-0">
+        <div class="title" id="ParallaxContent">
+            <div class="last"> <span style="color:#46cf46; font-weight:800">Hi there, my name is</span></div>
+            <span class="large">Yeliz Guler</span>
+            <div class="last hideme">and I am a <span style="color:#46cf46; font-weight:800">Front End Developer.</span>
+            </div>
+        </div><a class="scroll-down" href="#tab-1"></a><img src="IMG_0357_rounded.png" id="ParallaxImage">
+    </section><!-- START OF STICKY MENU -->
+    <div class="et-hero-tabs-container"><a class="et-hero-tab" href="#tab-0">Home</a><a class="et-hero-tab"
+            href="#tab-1">About</a><a class="et-hero-tab" href="#tab-2">Experience</a><a class="et-hero-tab"
+            href="#tab-3">Contact</a><span class="et-hero-tab-slider highlight-background"></span></div>
+    <!-- END OF STICKY MENU -->
+    <!-- MAIN CONTENT -->
+    <main class="et-main">
+        <!-- START OF SECTION 2 (ABOUT) -->
+        <section class="et-slide background explode" id="tab-1">
+            <div class="background-wrapper bg-white">
+                <div class="container content-text" style="padding-bottom:4em;">
+                    <h1>About Me</h1>
+                    <div class="switch">
+                        <p>
+                        <p>Motivated and detail-oriented Front End Developer with a strong foundation in HTML5, CSS,
+                            ES6, and jQuery.
+                        </p>
+                        <p>Experienced in providing exceptional customer support and resolving
+                            technical issues efficiently. Eager to transition into a web development role and pursue
+                            a career as a Full Stack Developer. </p>
+                        <p>Committed to continuous learning and growth, seeking opportunities in London to build a
+                            solid foundation in web development and work towards becoming a versatile full stack
+                            developer in the future.
+                        </p>
+
+                        <p>I am currently seeking new opportunities. Let's set up a call to chat to see if I am fit to
+                            the position you might offer.</p>
+                        <br />
+                        <a href="https://www.linkedin.com/in/yelizguler/" title="Yeliz Guler LinkedIn"
+                            class="connect_button"><i class="fab fa-linkedin-in"></i>Connect on LinkedIn</a>
+                        <!-- <a href=""
+                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/bossix/web3?hide_event_type_details=1&hide_gdpr_banner=1'});return false;"
+                            class="connect_button zoom"><i class="fas fa-calendar-check"></i>Schedule a Zoom</a>  -->
+                    </div>
+                </div>
+
+        </section><!-- START OF SECTION 3 (EXPERIENCE) -->
+        <section class="et-slide background" id="tab-2">
+            <!-- Experience -->
+            <div class="background-wrapper bg-grey no-side-padding bg-experience">
+                <div class="background-inner experience-wrapper">
+                    <h1 class="animate-experience">Experience</h1><!-- START OF CAROUSEL -->
+                    <div class="carousel experience" data-flickity='{ "groupCells": true,"imagesLoaded": true }'>
+                        <!-- START OF CELLS FOR CAROUSEL -->
+                        <div class="carousel-cell">
+                            <div class="carousel-inner">
+                                <div class="card-title ent">
+                                    <div>
+                                        <p>Technical Suppport Engineer</p>Insider<br>Jan 2022 – Jul 2023<br>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li>Supporting customers with their needs via using jQuery, HTML, and CSS.</li>
+                                        <li>Creating custom web content accordingly to customers' needs.
+                                        <li>Creating storage, user behavior, and website-based segment.
+                                            Beautifying the codes and testing.</li>
+                                        <li>Resolved customers' complaints and concerns with strong verbal and
+                                            negotiation skills.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="carousel-inner">
+                                <div class="card-title ent">
+                                    <div>
+                                        <p>Software Developer</p>6Zeka<br>Sep 2020 – Dec 2021 <br>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li>Developed API integrated Web pages with HTML5, CSS, Python.</li>
+                                        <li>Wordpress based site and store design.</li>
+                                        <li>Preprocessed and completed data using Knime.</li>
+                                        <li>Orchestrated the redesign, development and launch of Ent.com and rebranding
+                                            of the digital banking app (2020)</li>
+                                        <li>Execution of transactions in the backoffice of the platform.</li>
+                                        <li>Writing indicator using C# on EvoCode.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="carousel-inner">
+                                <div class="card-title growth">
+                                    <div>
+                                        <p>Research and Development Specialist</p>OptiWisdom<br>Jan 2020 – Sep 2020<br>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li>Pioneered novel research strategies, leading to a breakthrough in process
+                                            optimization and garnering recognition from industry peers.
+                                        </li>
+                                        <li>Authored and co-authored research findings for prestigious publications,
+                                            contributing to the advancement of knowledge in the field.</li>
+                                        <li>Successfully customized and implemented new methodologies, resulting in a
+                                            30% improvement in research efficiency.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="carousel-inner">
+                                <div class="card-title elevate">
+                                    <div>
+                                        <p>Electrical Electronics Engineer</p>Simple Electronics<br>June 2019 – Jan
+                                        2020<br>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li>Led electronic architecture design for innovative products, achieving a
+                                            25% reduction in production costs while maintaining product quality.
+                                        </li>
+                                        <li>Implemented safety measures and quality control procedures, ensuring
+                                            compliance with industry regulations and zero product recalls.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!-- END OF CELLS FOR CAROUSEL -->
+                    </div><!-- END OF CAROUSEL -->
+                </div>
+            </div><!-- Skills -->
+            <div class="background-wrapper bg-white animate-skills">
+                <div class="background-inner ">
+                    <h1>Skills</h1><!-- START OF TABS -->
+                    <div class="tabs"><input type="radio" id="tab1" name="tab-control"><input type="radio" id="tab2" name="tab-control">
+            <ul class="tabbed">
+              <li title="Tech" class="pop"><label for="tab1" role="button" id="firsttab"><span>Technology</span></label></li>
+            </ul>
+            <div class="slider">
+              <div class="indicator highlight-background"></div>
+            </div>
+            <div class="content">
+              <!-- START OF TAB 1 -->
+              <section>
+                <div class="skills">
+                  <ul class="lines">
+                    <li class="line l--0"><span class="line__label title"></span></li>
+                    <li class="line l--25"><span class="line__label">The basics</span></li>
+                    <li class="line l--50"><span class="line__label">Advanced</span></li>
+                    <li class="line l--75"><span class="line__label">Seasoned</span></li>
+                    <li class="line l--100"><span class="line__label">Expert</span></li>
+                  </ul>
+                  <div class="charts">
+                    <div class="chart chart--dev">
+                      <ul class="chart--horiz">
+                        <li class="chart__bar highlight-bggradient" style="width:93%;"><span class="chart__label">Front End Technologies (HTML5, CSS)</span></li>
+                        <li class="chart__bar highlight-bggradient" style="width: 80%;"><span class="chart__label">Visual Studio</span></li>
+                        <li class="chart__bar highlight-bggradient" style="width:57%;"><span class="chart__label">Web Development</span></li>
+                        <li class="chart__bar highlight-bggradient" style="width: 85%;"><span class="chart__label">Java Script, jQuery</span></li>
+                        <li class="chart__bar highlight-bggradient" style="width: 75%;"><span class="chart__label">A/B Testing</span></li>
+                        <li class="chart__bar highlight-bggradient" style="width: 85%;"><span class="chart__label">Quality Assurance</span></li>
+                        <li class="chart__bar highlight-bggradient" style="width: 35%;"><span class="chart__label">React Native, Android Native</span></li>                      
+                      </ul>
+                    </div>
+                  </div>
+              </div></section><!-- END OF TAB 1 -->
+            </div>
+          </div><!-- FINAL END OF TABS -->
+                </div>
+            </div>
+        </section><!-- START OF SECTION 4 (CONTACT) -->
+        <section class="et-slide background" id="tab-3">
+            <div class="background-wrapper bg-grey">
+                <div class="background-inner">
+                    <h1 style="margin-bottom:4em;">Let's Connect</h1><!-- CONTACT CARD -->
+                    <div class="card">
+                        <div class="gravatar lark"></div>
+                        <h1 style="margin-bottom:0!important;font-size:1.5em;">Yeliz Guler</h1>
+                        <p>Thanks for visiting! Send a connection request on <a
+                                href="https://www.linkedin.com/in/yelizguler/" title="Yeliz Guler LinkedIn"
+                                style="text-decoration:underline">LinkedIn</a></p>
+                        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                            async></script>
+                        <a href="https://www.linkedin.com/in/yelizguler/" title="Yeliz Guler LinkedIn"
+                            class="connect_button"><i class="fab fa-linkedin-in"></i>Connect on LinkedIn</a>
+                    </div><!-- ENDCONTACT CARD -->
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script
+    src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+</html>
