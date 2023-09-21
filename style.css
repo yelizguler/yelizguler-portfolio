@@ -268,12 +268,12 @@ body.portfolio .tabs .slider .indicator {
 }
 
 .highlight-bggradient {
-    background: linear-gradient(10deg, #46cf46 30%, #3be9ba 70%) !important;
+    background: linear-gradient(10deg, #2196F3 30%, #90a0f8 70%) !important;
 }
 
 section .title div span::after,
 .highlight-background {
-    background-color: #46cf46;
+    background-color: #2196f3;
 }
 
 .bg-grey {
@@ -1537,7 +1537,7 @@ section .title div span::after,
     padding: 1em 1em 1em 1em;
     color: white;
     font-weight: 400;
-    background: linear-gradient(10deg, #46cf46 30%, #3be9ba 70%);
+    background: linear-gradient(10deg, #2196F3 30%, #90a0f8 70%);
     min-height: 127px;
     position: relative;
     display: flex;
