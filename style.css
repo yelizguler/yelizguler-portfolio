@@ -582,16 +582,12 @@ section .title div span::after,
     left: 0;
 }
 
-.line.l--25 {
-    left: 25%;
+.line.l--33 {
+    left: 33.333%;
 }
 
-.line.l--50 {
-    left: 50%;
-}
-
-.line.l--75 {
-    left: 75%;
+.line.l--66 {
+    left: 66.666%;
 }
 
 .line.l--100 {
