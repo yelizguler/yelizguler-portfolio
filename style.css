@@ -251,14 +251,13 @@ body.portfolio .tabs .slider .indicator {
 
 .hero img {
     bottom: 70px;
-    max-height: 35vh;
+    max-height: 75vh;
     max-width: 75%;
     height: max-content;
     top: 25%;
-    left: 15%;
+    left: 0%;
     margin-right: -50%;
     position: absolute;
-    border-radius: 50%;
     transform: translate3d(0px, 0px, 0px);
 }
 
@@ -516,11 +515,11 @@ section .title div span::after,
 
 @media only screen and (max-width: 640px) {
     .hero img {
-        height: 75vh;
+        height: 60vh;
         position: absolute;
         bottom: 0px;
-        left: 0%;
-        top: 50%;
+        left: -25%;
+        top: 40%;
         max-width: 1000%;
         width: auto !important;
     }
@@ -1176,7 +1175,6 @@ section .title div span::after,
     height: 125px;
     width: 125px;
     margin-top: -25px;
-    background: url("IMG_0357_rounded.png") center;
     background-size: cover;
     overflow: hidden;
     border: 5px solid #fff;
@@ -1469,10 +1467,10 @@ section .title div span::after,
     background: transparent;
 }
 
-.testimonial,
+/* .testimonial,
 .experience {
-    /* hide disabled button */
-}
+    hide disabled button
+} */
 
 .testimonial .flickity-page-dots .dot,
 .experience .flickity-page-dots .dot {
