@@ -251,7 +251,7 @@ body.portfolio .tabs .slider .indicator {
 
 .hero img {
     bottom: 70px;
-    max-height: 75vh;
+    max-height: 780px;
     max-width: 75%;
     height: max-content;
     top: 25%;
@@ -515,7 +515,7 @@ section .title div span::after,
 
 @media only screen and (max-width: 640px) {
     .hero img {
-        height: 60vh;
+        height: 420px;
         position: absolute;
         bottom: 0px;
         left: -25%;
