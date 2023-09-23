@@ -276,6 +276,9 @@ section .title div span::after {
 }
 
 @media screen and (max-width:980px) {
+    .chart__label {
+        font-size: 15px !important;
+    }
 
     section .title div.last,
     section .title span.large {
@@ -457,8 +460,9 @@ section .title div span::after {
 }
 
 .chart__bar {
-    height: 30px;
-    margin-bottom: 10px;
+    display: flex;
+    height: 35px;
+    margin-bottom: 15px;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     opacity: 0;
@@ -528,6 +532,7 @@ section .title div span::after {
 }
 
 .chart__label {
+    font-size: 18px;
     padding-left: 10px;
     line-height: 30px;
     color: #fff;
@@ -571,10 +576,8 @@ section .title div span::after {
     font-family: Lato, sans-serif;
     -webkit-font-smoothing: antialiased;
     letter-spacing: .2em;
-    font-size: 14px;
-    display: block;
+    font-size: 20px;
     font-weight: 600;
-    color: #1d1e22;
 }
 
 .tabs ul.tabbed {
@@ -676,16 +679,12 @@ section .title div span::after {
     left: 1px;
 }
 
-.tabs input[name=tab-control]:first-of-type:checked~ul>li:first-child>label,
-.tabs input[name=tab-control]:nth-of-type(2):checked~ul>li:nth-child(2)>label,
-.tabs input[name=tab-control]:nth-of-type(3):checked~ul>li:nth-child(3)>label {
+.tabs input[name=tab-control]:first-of-type:checked~ul>li:first-child>label {
     cursor: default;
     color: #1d1e22;
 }
 
-.tabs input[name=tab-control]:first-of-type:checked~ul>li:first-child>label svg,
-.tabs input[name=tab-control]:nth-of-type(2):checked~ul>li:nth-child(2)>label svg,
-.tabs input[name=tab-control]:nth-of-type(3):checked~ul>li:nth-child(3)>label svg {
+.tabs input[name=tab-control]:first-of-type:checked~ul>li:first-child>label svg {
     fill: #1d1e22;
 }
 
@@ -741,30 +740,28 @@ section .title div span::after {
 
 @media (max-width:450px) {
 
-    .tabs input[name=tab-control]:first-of-type:checked~ul>li:first-child>label,
-    .tabs input[name=tab-control]:nth-of-type(2):checked~ul>li:nth-child(2)>label,
-    .tabs input[name=tab-control]:nth-of-type(3):checked~ul>li:nth-child(3)>label {
-        font-size: 12px
+    .tabs input[name=tab-control]:first-of-type:checked~ul>li:first-child>label {
+        font-size: 16px;
     }
 
     .tabs ul li label {
         font-size: 11px;
-        letter-spacing: .1vw
+        letter-spacing: .1vw;
     }
 
     .tabs .content {
-        margin-top: 20px
+        margin-top: 20px;
     }
 }
 
 @-webkit-keyframes fade_move_down {
     0% {
         -webkit-transform: translate(0, -10px) rotate(45deg);
-        opacity: 0
+        opacity: 0;
     }
 
     50% {
-        opacity: 1
+        opacity: 1;
     }
 
     100% {
@@ -979,6 +976,7 @@ section .title div span::after {
 }
 
 .experience .carousel-cell .card-title {
+    font-size: 20px;
     text-align: left;
     width: 100%;
     border-radius: 10px 10px 0 0;
@@ -1014,7 +1012,7 @@ strong {
 }
 
 .card-body {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 30px;
 }
 
@@ -1131,4 +1129,9 @@ strong {
     display: block;
     font-size: 2vw;
     line-height: 4vw;
+}
+
+.switch {
+    font-size: 20px;
+    line-height: 35px;
 }
