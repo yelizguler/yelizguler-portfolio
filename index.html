@@ -16,11 +16,9 @@
     <link rel="icon" type="image/webp" sizes="16x16" href="mini_profile.webp">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#3E4B58">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&amp;display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
         integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
@@ -50,38 +48,7 @@
                             once: false
                         });
                     });
-
-                    const carousel = gsap.utils.toArray(".content-text");
-
-                    carousel.forEach((box, i) => {
-                        const anim = gsap.fromTo(
-                            box,
-                            { autoAlpha: 0, y: 50 },
-                            { duration: 1, autoAlpha: 1, y: 0 }
-                        );
-                        ScrollTrigger.create({
-                            trigger: box,
-                            animation: anim,
-                            toggleActions: "play none none reverse",
-                            once: false
-                        });
-                    });
-
-                    const animates = gsap.utils.toArray(".animate");
-
-                    animates.forEach((box, i) => {
-                        const anim = gsap.fromTo(
-                            box,
-                            { autoAlpha: 0, y: 50 },
-                            { duration: 1, autoAlpha: 1, y: 0 }
-                        );
-                        ScrollTrigger.create({
-                            trigger: box,
-                            animation: anim,
-                            toggleActions: "play none none reverse",
-                            once: false
-                        });
-                    });
+                    
 
                     gsap
                         .timeline({
