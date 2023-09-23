@@ -119,58 +119,6 @@
                         document.querySelector("#firsttab").click();
                     }
 
-                    const p = tl.to(
-                        ".path",
-                        {
-                            rotationZ: 360,
-                            ease: "none",
-                            duration: dur,
-                            stagger: {
-                                each: -del,
-                                repeat: -1
-                            }
-                        },
-                        0
-                    );
-
-                    // Skip the loading
-                    tl.progress(0.9999);
-
-                    const timeScaleTween = gsap.to(tl, {
-                        duration: 0.75,
-                        timeScale: 0.1,
-                        paused: true
-                    });
-
-                    gsap
-                        .timeline({
-                            scrollTrigger: {
-                                trigger: ".base",
-                                start: "bottom bottom",
-                                end: "center center",
-                                scrub: 0.3
-                            }
-                        })
-                        .add("start")
-                        .fromTo(
-                            ".top",
-                            { yPercent: 0, rotation: 0 },
-                            { rotation: 15, yPercent: -96, duration: 1, repeat: 0, ease: "linear" },
-                            "start"
-                        )
-                        .fromTo(
-                            ".test",
-                            { yPercent: 0, scale: 0.5 },
-                            { scale: 1, yPercent: -72, duration: 1, repeat: 0, ease: "linear" },
-                            "start"
-                        )
-                        .fromTo(
-                            ".intp",
-                            { yPercent: 0, scale: 0.5 },
-                            { scale: 1, yPercent: -12, duration: 1, repeat: 0, ease: "linear" },
-                            "start"
-                        );
-
                     var parallaxImage = document.getElementById("ParallaxImage");
                     var parallaxContent = document.getElementById("ParallaxContent");
                     var windowScrolled;
@@ -300,7 +248,7 @@
         }</script>
 
     <!-- START OF SECTION 1 (HOME SCREEN) -->
-    <section class="et-hero-tabs hero" id="home">
+    <section class="et-hero-tabs hero" id="home" style="background: linear-gradient(45deg, rgba(5, 176, 219, .2) 0, rgba(11, 11, 11, .95) 85%) 100% no-repeat, url(background.webp) 0 0/cover no-repeat !important">
         <div class="title" id="ParallaxContent">
             <div class="last"> <span style="color:#2196f3; font-weight:800">Hi there, my name is</span></div>
             <span class="large">Yeliz Guler</span>

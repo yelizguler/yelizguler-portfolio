@@ -1,4 +1,3 @@
-.bg-image,
 .hero img {
     left: 0;
     position: absolute
@@ -9,18 +8,9 @@ a {
     text-decoration: none
 }
 
-.brand.carousel .carousel-cell img,
-.portfolio .carousel .carousel-cell img {
-    margin-top: 20px;
-    margin-bottom: 55px;
-    box-shadow: 0 24px 32px 0 rgba(0, 0, 0, .12)
-}
-
-.calendly-overlay,
 .chart--horiz,
 .experience .carousel,
-.gravatar,
-.testimonial .carousel {
+.gravatar {
     overflow: hidden
 }
 
@@ -31,13 +21,11 @@ a {
     box-sizing: border-box
 }
 
-#prototyping,
 .experience .flickity-prev-next-button,
 .flickity-page-dots,
 .show-instead,
 .tabs input[name=tab-control],
-.tabs ul.tabbed li label br,
-.testimonial .flickity-prev-next-button {
+.tabs ul.tabbed li label br {
     display: none
 }
 
@@ -45,7 +33,6 @@ a {
     background-color: #3e98f4;
 }
 
-.branded #prototyping,
 .container,
 .tabs input[name=tab-control]:first-of-type:checked~.content>section:first-child,
 .tabs input[name=tab-control]:nth-of-type(2):checked~.content>section:nth-child(2),
@@ -148,10 +135,6 @@ section .title div.last {
     float: right
 }
 
-body.portfolio .tabs .slider .indicator {
-    background: #00c1d5 !important
-}
-
 .et-hero-tabs,
 .et-slide {
     display: flex;
@@ -174,18 +157,6 @@ body.portfolio .tabs .slider .indicator {
 .et-slide h2 {
     font-size: 1.4rem;
     line-height: 1.4rem
-}
-
-.portfolio .bg-alt-gradient:before,
-.portfolio .et-hero-tabs-container:before {
-    content: "";
-    position: absolute;
-    margin-top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 6px;
-    background-image: linear-gradient(to right, #6fbe2e 19%, #00bbd6 43%, #0f61a9 57%, #5a39a0 81%)
 }
 
 .et-hero-tabs h3,
@@ -233,7 +204,6 @@ body.portfolio .tabs .slider .indicator {
 }
 
 @media (min-width:800px) {
-
     .et-hero-tabs h1,
     .et-slide h1 {
         font-size: 3rem
@@ -265,7 +235,6 @@ body.portfolio .tabs .slider .indicator {
 .hero {
     text-align: right;
     padding: 0;
-    background: linear-gradient(45deg, rgba(5, 176, 219, .2) 0, rgba(11, 11, 11, .95) 85%) 100% no-repeat, url(background.webp) 0 0/cover no-repeat !important
 }
 
 .hero img {
@@ -278,7 +247,6 @@ body.portfolio .tabs .slider .indicator {
     transform: translate3d(0, 0, 0)
 }
 
-.highlight-hero-text,
 .highlight-hover:hover,
 .highlight-text {
     color: #05b0db !important
@@ -301,67 +269,6 @@ section .title div span::after {
     background: #fff
 }
 
-.bg-alt-solid,
-.bg-darkgreysolid {
-    background: #1f2830
-}
-
-.bg-alt-gradient h1,
-.bg-alt-solid h1,
-.bg-darkgrey h1,
-.bg-darkgreysolid h1 {
-    color: #fff
-}
-
-.bg-alt-gradient,
-.bg-darkgrey {
-    background: radial-gradient(circle, #374756 0, #1f2830 70%)
-}
-
-.future_work {
-    font-size: 16rem;
-    line-height: 16rem;
-    color: #cecece
-}
-
-.bg-image {
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    margin: 0;
-    border: 0
-}
-
-.calendly-popup-content,
-.stackedimage {
-    position: relative
-}
-
-.stackedimage .image3 {
-    border-radius: 10px;
-    border: 3px solid #fff;
-    width: 50%;
-    position: absolute;
-    bottom: -5px;
-    left: -25px;
-    transform: rotate(-5deg)
-}
-
-.photocol {
-    flex: 1;
-    margin: 2px;
-    padding: 10px;
-    align-items: center
-}
-
-.photocol:first-child {
-    margin-left: 0
-}
-
-.photocol:last-child {
-    margin-right: 0
-}
-
 .columns {
     display: flex;
     flex-flow: row wrap;
@@ -380,11 +287,6 @@ section .title div span::after {
         letter-spacing: .25vw;
         font-family: Lato, sans-serif;
         -webkit-font-smoothing: antialiased
-    }
-
-    .switch {
-        font-size: 14px !important;
-        line-height: 25px !important
     }
 
     section .title span.large {
@@ -406,99 +308,20 @@ section .title div span::after {
         max-width: 80%;
         float: right
     }
-
-    .testimonial h1 {
-        font-size: 1.4em !important
-    }
-
-    .columns .photocol {
-        margin-bottom: 5px;
-        flex-basis: 40%
-    }
-
-    .columns .photocol:nth-last-child(2) {
-        margin-right: 0
-    }
-
-    .columns .photocol:last-child {
-        flex-basis: 100%;
-        margin: 0
-    }
-}
-
-.grey-rounded-insert {
-    border-radius: 50px;
-    background: #f0f1f1;
-    display: block;
-    position: absolute;
-    z-index: -1;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 900px;
-    height: 300px
-}
-
-.grey-rounded-insert h2 {
-    font-size: 3em;
-    color: #223d58 !important;
-    text-shadow: 0 4px 15px rgba(0, 0, 0, .05)
-}
-
-@media screen and (max-width:680px) {
-    .columns .photocol {
-        flex-basis: 100%;
-        margin: 0 0 5px
-    }
-
-    .grey-rounded-insert {
-        width: 92%;
-        height: 800px
-    }
 }
 
 .experience .carousel-cell .card-body ul,
-.left-align,
-.testimonial .carousel-cell .card-body ul {
+.left-align {
     text-align: left
-}
-
-.switch {
-    font-size: 20px;
-    line-height: 35px
-}
-
-.embed-responsive-item {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff
 }
 
 .shadow-smooth-md {
     box-shadow: 0 1px 1px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .12), 0 4px 4px rgba(0, 0, 0, .12), 0 8px 8px rgba(0, 0, 0, .12), 0 16px 16px rgba(0, 0, 0, .12)
 }
 
-.section-bg {
-    position: absolute;
-    width: 100%;
-    height: 570px;
-    z-index: 1;
-    bottom: 0;
-    left: 0
-}
-
 .lines,
 .skills {
     position: relative
-}
-
-.section-bg h1 {
-    padding-top: 2.3em;
-    color: #fff
 }
 
 .background-wrapper {
@@ -530,10 +353,6 @@ section .title div span::after {
     z-index: 0
 }
 
-.leadership-desc .scroll-down {
-    margin: -30px auto 0
-}
-
 .scroll-down {
     display: block;
     text-align: center;
@@ -560,8 +379,7 @@ section .title div span::after {
 
 .card,
 .connect_button i,
-.line__label,
-.social i {
+.line__label {
     text-align: center
 }
 
@@ -629,16 +447,6 @@ section .title div span::after {
     opacity: 0;
     -webkit-animation: 1s forwards anim-lightspeed-in;
     animation: 1s forwards anim-lightspeed-in
-}
-
-.chart--prod .chart__title {
-    -webkit-animation-delay: 3.3s;
-    animation-delay: 3.3s
-}
-
-.chart--design .chart__title {
-    -webkit-animation-delay: 4.5s;
-    animation-delay: 4.5s
 }
 
 .chart--horiz {
@@ -1123,255 +931,7 @@ section .title div span::after {
     animation: 6s ease-in-out infinite float
 }
 
-.atom,
-.orbit {
-    position: absolute;
-    transform-style: preserve-3d
-}
-
 .gravatar img {
-    width: 100%;
-    height: auto
-}
-
-.social a {
-    color: rgba(0, 0, 0, .45) !important
-}
-
-.social {
-    margin-top: 2em;
-    margin-bottom: 2em
-}
-
-.social i {
-    box-shadow: 0 10px 25px -4px rgba(0, 0, 0, .1), inset 0 -3px 4px -1px rgba(0, 0, 0, .1), 0 -10px 15px -1px rgba(255, 255, 255, .6), inset 0 3px 4px -1px rgba(255, 255, 255, .2), inset 0 0 5px 1px rgba(255, 255, 255, .8), inset 0 20px 30px 0 rgba(255, 255, 255, .2);
-    border-radius: 100%;
-    margin: .5em;
-    width: 2em;
-    height: 2em;
-    line-height: 2em;
-    font-size: 1.2em;
-    -webkit-animation: 1s .8s btnBulge;
-    animation: 1s .8s btnBulge
-}
-
-.social i:hover {
-    cursor: pointer;
-    box-shadow: 0 10px 25px -4px rgba(0, 0, 0, .08), 0 -10px 15px -1px #fff, inset 0 3px 4px -1px rgba(0, 0, 0, .05), inset 0 0 5px 1px rgba(255, 255, 255, .3), inset 0 20px 30px 0 rgba(255, 255, 255, .2);
-    color: #1d1e22
-}
-
-@-webkit-keyframes btnBulge {
-    0% {
-        transform: scale(1)
-    }
-
-    20% {
-        transform: scale(1.5)
-    }
-
-    60% {
-        transform: scale(.75)
-    }
-
-    80% {
-        transform: scale(1.1)
-    }
-}
-
-@keyframes btnBulge {
-    0% {
-        transform: scale(1)
-    }
-
-    20% {
-        transform: scale(1.5)
-    }
-
-    60% {
-        transform: scale(.75)
-    }
-
-    80% {
-        transform: scale(1.1)
-    }
-}
-
-@-webkit-keyframes float {
-
-    0%,
-    100% {
-        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .6);
-        transform: translatey(0)
-    }
-
-    50% {
-        box-shadow: 0 25px 15px 0 rgba(0, 0, 0, .2);
-        transform: translatey(-20px)
-    }
-}
-
-@keyframes float {
-
-    0%,
-    100% {
-        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .6);
-        transform: translatey(0)
-    }
-
-    50% {
-        box-shadow: 0 25px 15px 0 rgba(0, 0, 0, .2);
-        transform: translatey(-20px)
-    }
-}
-
-.atom {
-    bottom: -190px;
-    left: 50%;
-    width: 300px;
-    height: 300px;
-    perspective: 1000;
-    margin-left: -150px;
-    margin-top: -146px;
-    z-index: 3
-}
-
-.nucleus {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -90px 0 0 -62px;
-    width: 125px;
-    height: 125px;
-    background-size: 125px 125px
-}
-
-.orbit,
-.path {
-    width: 300px;
-    height: 300px
-}
-
-.orbit {
-    top: 0;
-    left: 0;
-    border-radius: 300px;
-    border: 7px solid #b0b8c1;
-    transform: rotateX(80deg) rotateY(20deg)
-}
-
-.orbit:nth-child(2) {
-    transform: rotateX(80deg) rotateY(70deg)
-}
-
-.orbit:nth-child(3) {
-    transform: rotateX(80deg) rotateY(-20deg)
-}
-
-.orbit:nth-child(4) {
-    transform: rotateX(80deg) rotateY(-50deg)
-}
-
-.path {
-    position: relative;
-    transform-style: preserve-3d
-}
-
-.electron,
-.intp {
-    position: absolute;
-    left: 50%
-}
-
-.electron {
-    top: -20px;
-    margin-left: -20px;
-    width: 40px;
-    height: 40px;
-    border-radius: 40px;
-    background: #6fbe2e
-}
-
-.intp {
-    bottom: -220px;
-    width: 400px;
-    height: 400px;
-    margin-left: -200px;
-    font-size: 2em;
-    color: #fff;
-    -webkit-font-smoothing: antialiased;
-    z-index: 3
-}
-
-.base,
-.piece.top {
-    width: 300px;
-    left: 50%;
-    transform: translateX(-50%)
-}
-
-.intp span {
-    font-size: 4em;
-    font-weight: 800;
-    letter-spacing: .25vw;
-    font-family: Lato, sans-serif;
-    text-shadow: 0 15px 5px rgba(0, 0, 0, .1), 10px 20px 5px rgba(0, 0, 0, .05), -10px 20px 5px rgba(0, 0, 0, .05)
-}
-
-.explode {
-    position: relative;
-    background: #fff;
-    display: block !important
-}
-
-.base,
-.piece.top,
-.piece:not(.base) {
-    position: absolute
-}
-
-.piece:not(.base) {
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0
-}
-
-#explode_spacer {
-    height: 570px;
-    display: inline-block;
-    width: 100%
-}
-
-.piece.top {
-    bottom: -1px;
-    z-index: 2
-}
-
-.base {
-    bottom: 0;
-    z-index: 4
-}
-
-.portfolio .carousel .carousel-cell {
-    width: 90%;
-    max-width: 700px;
-    margin-right: 10px;
-    height: auto
-}
-
-.portfolio .carousel .carousel-cell img {
-    width: 100%;
-    height: auto
-}
-
-.brand.carousel .carousel-cell {
-    width: 45%;
-    max-width: 600px;
-    margin-right: 10px;
-    height: auto
-}
-
-.brand.carousel .carousel-cell img {
     width: 100%;
     height: auto
 }
@@ -1380,21 +940,18 @@ section .title div span::after {
     background: 0 0
 }
 
-.experience .flickity-page-dots .dot,
-.testimonial .flickity-page-dots .dot {
+.experience .flickity-page-dots .dot {
     height: 4px;
     width: 40px;
     margin: 0;
     border-radius: 0
 }
 
-.experience .flickity-slider,
-.testimonial .flickity-slider {
+.experience .flickity-slider {
     height: 550px !important
 }
 
-.experience .carousel-inner,
-.testimonial .carousel-inner {
+.experience .carousel-inner {
     width: 100%;
     background: #fff;
     margin-top: 50px;
@@ -1405,16 +962,14 @@ section .title div span::after {
     box-shadow: 0 24px 32px 0 rgba(0, 0, 0, .12)
 }
 
-.experience .carousel-cell,
-.testimonial .carousel-cell {
+.experience .carousel-cell {
     width: 80%;
     min-height: 94%;
     max-width: 450px;
     margin-right: 1em
 }
 
-.experience .carousel-cell img:not(.future),
-.testimonial .carousel-cell img:not(.future) {
+.experience .carousel-cell img:not(.future) {
     border-radius: 100%;
     height: 50px;
     width: 50px;
@@ -1426,8 +981,7 @@ section .title div span::after {
     top: 50%
 }
 
-.experience .carousel-cell .card-title,
-.testimonial .carousel-cell .card-title {
+.experience .carousel-cell .card-title {
     text-align: left;
     width: 100%;
     border-radius: 10px 10px 0 0;
@@ -1440,16 +994,14 @@ section .title div span::after {
     display: flex
 }
 
-.experience .carousel-cell .card-title p,
-.testimonial .carousel-cell .card-title p {
+.experience .carousel-cell .card-title p {
     font-weight: 800;
     font-size: 1.1em;
     line-height: 1em;
     margin: 0
 }
 
-.experience .carousel-cell .card-body,
-.testimonial .carousel-cell .card-body {
+.experience .carousel-cell .card-body {
     padding: 1em;
     display: flex;
     justify-content: center
@@ -1460,31 +1012,8 @@ section .title div span::after {
     background: linear-gradient(10deg, #214d94 20%, #00c1d5 80%) !important
 }
 
-.testimonial .carousel-cell {
-    opacity: .5;
-    z-index: 1;
-    transform: scale(1);
-    transition: transform .3s ease-out, opacity .3s ease-out
-}
-
-.testimonial .carousel-cell.is-selected {
-    z-index: 2;
-    opacity: 1;
-    transform: scale(1.05);
-    transition: transform .3s ease-out, opacity .3s ease-out
-}
-
 strong {
     font-weight: 600
-}
-
-.testimonial .carousel h2 {
-    line-height: 1em
-}
-
-.testimonial .carousel .card-body {
-    min-height: 400px;
-    align-items: center
 }
 
 .card-body {
@@ -1500,68 +1029,11 @@ strong {
     min-height: 450px !important
 }
 
-.testimonial .carousel .card-title {
-    padding: 1em;
-    justify-content: center;
-    text-align: center;
-    min-height: 145px
-}
-
-.testimonial .carousel .card-title img:not(.job_image) {
-    display: block;
-    position: initial;
-    border-radius: 100%;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .06), 0 2px 4px rgba(0, 0, 0, .06), 0 4px 8px rgba(0, 0, 0, .06), 0 8px 16px rgba(0, 0, 0, .06), 0 16px 32px rgba(0, 0, 0, .06), 0 32px 64px rgba(0, 0, 0, .06);
-    border: 3px solid #fff;
-    margin: -20px auto 5px;
-    width: 60px;
-    height: 60px
-}
-
-.testimonial .carousel .card-title img.job_image {
-    display: block;
-    position: absolute;
-    border-radius: 100%;
-    box-shadow: none !important;
-    border: 3px solid #fff;
-    background: #fff;
-    margin-left: 51%;
-    margin-top: -40px;
-    margin-bottom: 0;
-    width: 30px;
-    height: 30px
-}
-
-.testimonial .carousel-cell.is-selected .card-title img {
-    transform: scale(1.2) translate(0, -10px);
-    box-shadow: rgba(0, 0, 0, .3) 0 19px 38px, rgba(0, 0, 0, .22) 0 15px 12px;
-    transition: transform .3s ease-in-out .2s, opacity .3s ease-in-out .2s
-}
-
-.testimonial span {
-    font-weight: 600;
-    font-size: 1.3em
-}
-
 .explode .content-text h1 {
     padding-top: 2em
 }
 
-.testimonial .carousel-cell .carousel-inner {
-    margin-top: 50px;
-    background: #fff
-}
-
 @media screen and (min-width:768px) {
-    .portfolio .carousel .carousel-cell {
-        width: 50%
-    }
-
-    .brand.carousel .carousel-cell {
-        width: 20%;
-        max-width: 600px
-    }
-
     .base,
     .piece.top {
         width: 500px;
@@ -1611,40 +1083,6 @@ strong {
     .base {
         bottom: 0;
         z-index: 4
-    }
-
-    .path {
-        width: 600px;
-        height: 600px
-    }
-
-    .path {
-        position: relative;
-        transform-style: preserve-3d
-    }
-
-    .intp {
-        position: absolute;
-        left: 50%
-    }
-
-    .intp {
-        bottom: -420px;
-        width: 700px;
-        height: 700px;
-        margin-left: -350px;
-        font-size: 4em;
-        color: #fff;
-        -webkit-font-smoothing: antialiased;
-        z-index: 3
-    }
-
-    .intp span {
-        font-size: 4em;
-        font-weight: 800;
-        letter-spacing: .25vw;
-        font-family: Lato, sans-serif;
-        text-shadow: 0 15px 5px rgba(0, 0, 0, .1), 10px 20px 5px rgba(0, 0, 0, .05), -10px 20px 5px rgba(0, 0, 0, .05)
     }
 
     .carousel-cell .card-title {
