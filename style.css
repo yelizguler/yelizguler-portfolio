@@ -876,10 +876,6 @@ section .title div span::after {
     transition: .3s
 }
 
-.connect_button.zoom {
-    background-color: #05b0db
-}
-
 .connect_button.hover i,
 .connect_button:after,
 .connect_button:hover i {
