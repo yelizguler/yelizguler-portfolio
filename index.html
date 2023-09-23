@@ -27,7 +27,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"
         integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q=="
         crossorigin="anonymous"></script>
-
     <script id="rendered-js">
         // wait until DOM is ready
         document.addEventListener("DOMContentLoaded", function (event) {
@@ -272,7 +271,6 @@
                 });
 
             };
-
         }, { passive: true });
     </script>
 
@@ -283,6 +281,16 @@
         gtag('js', new Date());
 
         gtag('config', 'G-ZHEFX4ZD5Z');
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".flickity-prev-next-button").hover(function () {
+                $(this).css("background-color", "#3a98f4");
+            }, function () {
+                $(this).css("background-color", "white");
+            });
+        });
     </script>
 </head>
 
