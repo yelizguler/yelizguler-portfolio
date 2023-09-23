@@ -78,7 +78,7 @@ body {
 
 section .title {
     position: absolute;
-    right: 3em;
+    right: 18em;
     width: 50%;
     text-align: right;
     padding-bottom: 10px;
@@ -559,7 +559,6 @@ section .title div span::after {
 }
 
 .tabs {
-    background: #fff;
     padding-bottom: 80px;
     width: 100%;
     max-width: 960px;
