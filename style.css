@@ -1003,7 +1003,7 @@ section .title div span::after {
 .connect_button:after {
     width: 50px;
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 0;
     border-radius: 5px 0 0 5px;
     transition: .3s;
