@@ -426,7 +426,7 @@ section .title div span::after {
 
     section .title span.large {
         display: inline-block;
-        font-size: 10.5vw;
+        font-size: 11.5vw;
         line-height: 11vw;
         width: 100%;
         text-transform: uppercase;
@@ -436,7 +436,7 @@ section .title div span::after {
     }
 
     section .title div.last {
-        font-size: 14px;
+        font-size: 20px;
         line-height: 1.5em;
         -webkit-animation: 1s .25s both byBottom !important;
         animation: 1s .25s both byBottom !important;
@@ -445,7 +445,7 @@ section .title div span::after {
     }
 
     section .title {
-        width: 60%;
+        width: 75%;
         right: 1em;
     }
 }
