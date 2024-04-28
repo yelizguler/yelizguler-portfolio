@@ -27,22 +27,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 if (popupClicked) {
                     return;
-                } else {
+                } else if ($('#overlay').length === 0){
                     self.buildHTML();
                     self.setEvents();
                 }
             };
 
             self.reset = function () {
-                $('#custom-popup-container').remove();
+                $('#overlay').remove();
             };
 
             self.buildHTML = function () {
                 $('body').append(
-                    '<div id="custom-popup-container">' +
-                    '<div id="close-button">X</div>' +
-                    '<div id="content-1" style="color: #3e547e; font-weight: 600">Don\'t leave! I didn\'t show you everything I can do.</div>' +
-                    '<div id="custom-button"><span>Show me the next thing you can do</span></div>' +
+                    '<div id="overlay">' +
+                    '   <div id="custom-popup-container">' +
+                    '       <div id="close-button">X</div>' +
+                    '       <div id="content-1" style="color: #3e547e; font-weight: 600">Don\'t leave! I didn\'t show you everything I can do.</div>' +
+                    '       <div id="custom-button"><span>Show me the next thing you can do</span></div>' +
+                    '   </div>' +
                     '</div>'
                 );
             };
