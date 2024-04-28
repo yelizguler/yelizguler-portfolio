@@ -417,6 +417,7 @@ section .title div span::after {
 
     .connect_button {
         padding: 5px 10px 5px 55px !important;
+        width: 200px;
     }
 
     section .title div.last,
