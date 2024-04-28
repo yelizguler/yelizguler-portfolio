@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function handleExitIntent() {
-        console.log('Exit intent detected!');
         (function (self) {
             'use strict';
 
@@ -57,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const handleCustomButtonClick = function () {
                     localStorage.setItem(buttonClickedKey, 'true');
                     $('#content-1').text('Thank you for staying! I am working on the next thing. Please come back later :)');
+                    $('#content-1').css('width', '250px')
                     $('#custom-button').remove();
                 };
 

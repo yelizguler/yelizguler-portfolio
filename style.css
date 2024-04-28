@@ -415,6 +415,10 @@ section .title div span::after {
         font-size: 15px !important;
     }
 
+    .connect_button {
+        padding: 5px 10px 5px 55px !important;
+    }
+
     section .title div.last,
     section .title span.large {
         color: #fff;
