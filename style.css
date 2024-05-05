@@ -296,7 +296,7 @@ section .title div.last {
     height: 70px;
     box-shadow: 0 0 20px rgba(0, 0, 0, .1);
     background: #fff;
-    z-index: 1000;
+    z-index: 10000;
 }
 
 .et-hero-tabs-container--top {
@@ -1256,7 +1256,7 @@ strong {
     line-height: 35px;
 }
 
-/* Popup Style */
+/* POPUP START */
 @media only screen and (max-width:670px) {
     #content-1 {
         font-size: 12px;
@@ -1328,3 +1328,46 @@ strong {
     font-weight: bold;
     width: max-content;
 }
+/* POPUP END */
+
+/* HELLOBAR START */
+#announcementBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #2196f3;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+#announcementBar span {
+    display: inline-block;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: none;
+    white-space: nowrap;
+    animation: slide 10s linear infinite;
+}
+
+#closeButton {
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* HELLOBAR END */
